@@ -31,3 +31,4 @@ model.fit(trainX,trainY)
 print('Model training accuracy: ',model.score(trainX,trainY))
 print('Model testing accuracy: ',model.score(testX,testY))
 
+
