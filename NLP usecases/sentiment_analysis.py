@@ -99,3 +99,11 @@ model = M()
 model.fit(trainX,trainY)
 print("Model train score is: ",model.score(trainX,trainY))
 print("Model test score is: ",model.score(testX,testY))
+
+
+
+th = 0.5
+for word, index in word_index_map.items():
+    weight = model.coef_[0][index]
+    if weight >th or weight<-th:
+        print(word,weight)
